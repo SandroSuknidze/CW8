@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "dd">hmm </p>  
+    <button onclick = "fun()"> button </button>  
+
+
+
+    <p id = "dd2">hmm </p>  
+    <button onclick="fun2(4, 3)">button2</button>
+
+
+
+    <p id = "dd3">hmm</p>
+    <button onclick="fun3(4)">button3</button>
+
+    
+
+    <div>
+    <p id = "dd4">cxrili</p>
+    <input type="number" placeholder="miutitet cxrilis sigane" id="baro">
+    <button onclick="fun4()">button4</button>
+    <table border="1" cellspacing="0" id="kori" >
+        <tr>
+            <td>sandro</td>
+            <td>sandro</td>
+        </tr>
+        <tr>
+            <td>sandro</td>
+            <td>sandro</td>
+        </tr>
+    </table>
+    </div>
+
+
+
+
+    <div>
+        <p id = "dd45">cxrili</p>
+        <input type="number" placeholder="miutitet cxrilis sigane" id="baro2">
+        <button onclick="fun5()">button5</button>
+        <table border="1" cellspacing="0" id="kori12" >
+            <tr>
+                <td>sandro</td>
+                <td>sandro</td>
+            </tr>
+            <tr>
+                <td>sandro</td>
+                <td>sandro</td>
+            </tr>
+        </table>
+    </div>
+
+
+
+
+    <div>
+        <p id = "dd48">cxrili</p>
+        <input type="number" placeholder="miutitet cxrilis sigane" id="baro3">
+        <input type="number" placeholder="miutitet cxrilis simagle" id="baro4">
+        <button onclick="fun6()">button6</button>
+        <table border="1" cellspacing="0" id="kori123" >
+            <tr>
+                <td>sandro</td>
+                <td>sandro</td>
+            </tr>
+            <tr>
+                <td>sandro</td>
+                <td>sandro</td>
+            </tr>
+        </table>
+    </div>
+
+
+
+    <div>
+        <p id = "dd482">cxrili</p>
+        <input type="text" placeholder="miutitet cxrilis feri" id="baro5">
+        <button onclick="fun7()">button6</button>
+        <table border="1" cellspacing="0" id="kori1234" >
+            <tr>
+                <td>sandro</td>
+                <td>sandro</td>
+            </tr>
+            <tr>
+                <td>sandro</td>
+                <td>sandro</td>
+            </tr>
+        </table>
+    </div>
+
+
+
+
+    <div>
+        <p id = "dd4824">cxrili</p>
+        <input type="number" placeholder="miutitet cxrilis zgvris zoma" id="baro6">
+        <button onclick="fun8()">button6</button>
+        <table border="1" cellspacing="0" id="kori12345" >
+            <tr>
+                <td>sandro</td>
+                <td>sandro</td>
+            </tr>
+            <tr>
+                <td>sandro</td>
+                <td>sandro</td>
+            </tr>
+        </table>
+    </div>
+
+
+
+    <div>
+        <p id = "sdd4824">cxrili</p>
+        <input type="number" placeholder="miutitet cxrilis sigane" id="baro7">
+        <input type="number" placeholder="miutitet cxrilis simagle" id="baro8">
+        <input type="text" placeholder="miutitet cxrilis fonis feri" id="baro9">
+        <input type="number" placeholder="miutitet cxrilis zoma" id="baro10">
+        <button onclick="fun9()">button6</button>
+        <table border="1" cellspacing="0" id="kori123456" >
+            <tr>
+                <td>sandro</td>
+                <td>sandro</td>
+            </tr>
+            <tr>
+                <td>sandro</td>
+                <td>sandro</td>
+            </tr>
+        </table>
+    </div>
+    
+
+
+
+    <div>
+        <p id = "der">cxrili custom</p>
+        <input type="number" placeholder="miutitet cxrilis simagle[]" id="baro11">
+        <input type="number" placeholder="miutitet cxrilis sigane[]" id="baro12">
+        <button onclick="fun15()">button7</button>
+        <table id="ddr" border="1" cellspacing="0"> 
+        </table>
+    </div>
+
+
+
+    <div>
+        <p id = "der1">cxrili custom</p>
+        <input type="number" placeholder="miutitet cxrilis simagle[]" id="baro13">
+        <input type="number" placeholder="miutitet cxrilis sigane[]" id="baro14">
+        <button onclick="fun16()">button8</button>
+        <table id="ddr1" border="1" cellspacing="0"> 
+        </table>
+    </div>
+
+
+    <script>  
+    function fun() {  
+        var str = "rac gvinda rom gardaiqmnas";  
+        document.getElementById('dd').innerHTML = str.italics();  
+    }
+    
+
+    
+    function fun2(a, b) {
+        document.getElementById('dd2').innerHTML = a+b;
+    }
+
+
+    function fun3(a) {
+        var b = 'shriftis zommaa'
+        let ch = document.getElementById('dd3').style.fontSize = a + 'vh';
+        document.getElementById('dd3').innerHTML += " " + b + " " + ch;        
+    }
+
+
+    function fun4() {
+        let a = document.getElementById("baro").value
+        document.getElementById("kori").style.width = a + "px";
+    }
+
+
+    function fun5() {
+        let a = document.getElementById("baro2").value
+        document.getElementById("kori12").style.height = a + "px";
+    }
+
+
+
+    function fun6() {
+        let a = document.getElementById("baro3").value
+        let b = document.getElementById("baro4").value
+        document.getElementById("kori123").style.height = b + "px";
+        document.getElementById("kori123").style.width = a + "px";
+    }
+
+
+
+    function fun7() {
+        let a = document.getElementById("baro5").value
+        document.getElementById("kori1234").style.background = a;
+    }
+
+
+    function fun8() {
+        let a = document.getElementById("baro6").value
+        document.getElementById("kori12345").border = a + "px";
+    }
+
+
+
+    function fun9() {
+        let a = document.getElementById("baro7").value
+        let b = document.getElementById("baro8").value
+        let c = document.getElementById("baro9").value
+        let d = document.getElementById("baro10").value
+        document.getElementById("kori123456").border = d + "px";
+        document.getElementById("kori123456").style.background = c;
+        document.getElementById("kori123456").style.height = b + "px";
+        document.getElementById("kori123456").style.width = a + "px";
+    }
+
+
+
+    function fun11() {
+        for (let index = 1; index < 11; index++) {
+            console.log(index)
+        }
+    }
+
+    // fun11()
+
+
+    function fun12() {
+        let n = 15;
+        for (let index = 1; index < n; index++) {
+            console.log(index)
+            
+        }
+    }
+
+    // fun12()
+
+
+    function fun13() {
+        let n = 10;
+        let m = 20;
+        for (n; n < m; n++) {
+            console.log(n)
+            
+        }
+    }
+
+    // fun13()
+
+
+    function fun14() {
+        let m = 23;
+        let n = 20;
+        if (m<n) 
+        {
+            for (m; m < n; m++) 
+            {
+            console.log(m)
+            }
+        }
+        else
+        {
+            for (m; m > n; m--)
+            {
+                console.log(m)
+            }
+        }
+    }
+
+    // fun14()
+
+
+    function fun15() {
+        let a = document.getElementById("baro11").value
+        let b = document.getElementById("baro12").value
+        for(var r = 0; r < a; r++)
+            {
+                var x = document.getElementById('ddr').insertRow(r);
+                for(var c = 0; c < b; c++)
+                {
+                    var y = x.insertCell(c);
+                    y.innerHTML = "sandro"; 
+                }
+            }
+    }
+
+
+    function fun16() {
+        let a = document.getElementById("baro13").value
+        let b = document.getElementById("baro14").value
+        for(var r = 0; r < a; r++)
+            {
+                var x = document.getElementById('ddr1').insertRow(r);
+                for(var c = 0; c < b; c++)
+                {
+                    var y = x.insertCell(c);
+                    var r = r+1;
+                    var c = c+1;
+                    y.innerHTML = "striqoni" + r + "sveti" + c;
+                    var r = r-1; 
+                    var c = c-1;
+                }
+            }
+    }
+
+
+
+    function fun18(min, max, x) {
+        const length = 12
+        const arr = []
+        let y = 0;
+        let m = 0;
+        var n;
+        for (let index = 0; index < length; index++) {
+            n = Math.floor(Math.random()*(max-min+1)+min)
+            arr.push(n);
+            if (x>n) {
+                y+=1;
+            }
+            if (x<n) {
+                m+=1;
+            } 
+        }
+        console.log(y, m);
+        console.log(arr);
+    }
+
+    // fun18(10,100, 25)
+
+
+
+    function fun19(m) {
+        for(var i=0; i<m.length; ++i)
+        {
+            document.write('<br/>'+m[i].join(' '));
+        }
+    }
+    var a = [[15,25,14,52], [43,65,34,64], [43,75,87,34], [16,31,16,50]];
+    document.write('');
+    fun19(a);
+
+
+
+    function fun20(m) {
+        for(var i=0; i<m.length; ++i)
+        {
+            document.write('<br/>'+m[i].join(' '));
+        }
+    }
+    var b = [[15,25,14,52,64], [43,65,34,64,45], [43,75,87,34, 54], [16,31,16,50,14], [36,51,13,20,54]];
+    document.write('<br/>'+'<br/>');
+    fun20(b);
+
+    </script>  
+</body>
+</html>
